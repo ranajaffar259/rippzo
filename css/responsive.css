@@ -1,0 +1,22 @@
+@media screen and (max-width: 992px) {
+    #navbar #menu {
+        position: absolute;
+        background-color: #6275FF;
+        padding: 1rem;
+        width: 100%;
+        top: 100%;
+        transition: 0.2s;
+        left: 0;
+        overflow: hidden;
+        right: 0;
+    }
+
+    #navbar #menu ul .nav-rippzo-item .nav-rippzo-link.active{
+        color: #232149;
+    }
+
+    #navbar #menu ul .nav-rippzo-item .nav-rippzo-link:hover {
+         color: #232149;
+    }
+
+}

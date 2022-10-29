@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--rippzo-light);
+}
+
+:root {
+    --rippzo-primary: #6275FF;
+    --rippzo-secondary: #5b6ade;
+    --rippzo-dark: #232149;
+    --rippzo-light: #fbfbfb;
+    --rippzo-blue: #CAE8FF;
+    --transition-color: color 0.3s ease;
+    --transition-normal: all 0.3s ease;
+}
+
+::selection {
+    color: var(--rippzo-light);
+    background: var(--rippzo-secondary);
+}
+
+main {
+    min-height: 100vh;
+}
+
+main section {
+    padding: 4rem 0;
+}
+
+/* utils */
+
+.rippzo-input {
+    padding: 10px 1rem;
+    border-radius: 5px;
+    border: 1px solid rgb(157, 157, 157);
+}
+
+.rippzo-input:focus {
+    outline: 1px solid var(--rippzo-primary);
+}
+
+/* utils - backgorund colors */
+.bg-rippzo-primary {
+    background-color: var(--rippzo-primary) !important;
+}
+
+.bg-rippzo-secondary {
+    background-color: var(--rippzo-secondary) !important;
+}
+
+.bg-rippzo-dark {
+    background-color: var(--rippzo-dark) !important;
+}
+
+.bg-rippzo-blue {
+    background-color: var(--rippzo-blue) !important;
+}
+
+.bg-rippzo-light {
+    background-color: var(--rippzo-light) !important;
+}
+
+/* utils - text colors */
+.text-rippzo-primary {
+    color: var(--rippzo-primary) !important;
+}
+
+.text-rippzo-secondary {
+    color: var(--rippzo-secondary) !important;
+}
+
+.text-rippzo-dark {
+    color: var(--rippzo-dark) !important;
+}
+
+.text-rippzo-blue {
+    color: var(--rippzo-blue) !important;
+}
+
+.text-rippzo-light {
+    color: var(--rippzo-light) !important;
+}
+
+/* utils buttons */
+.rippzo-btn {
+    text-decoration: none;
+    color: var(--rippzo-light);
+    background: var(--rippzo-primary);
+    border-radius: 30px;
+    display: inline-block;
+    border: 2px solid var(--rippzo-primary);
+    padding: 10px 1.4rem;
+    transition: var(--transition-normal);
+}
+
+.rippzo-btn:hover {
+    color: var(--rippzo-light);
+    background: var(--rippzo-secondary);
+    border: 2px solid var(--rippzo-secondary);
+}
+
+.rippzo-outline-btn {
+    text-decoration: none;
+    color: var(--rippzo-light);
+    background: transparent;
+    border-radius: 30px;
+    display: inline-block;
+    padding: 10px 1.4rem;
+    transition: var(--transition-normal);
+    border: 2px solid var(--rippzo-primary);
+
+}
+
+.rippzo-outline-btn:hover {
+    color: var(--rippzo-light);
+    background: var(--rippzo-primary);
+}
+
+
+/* navbar */
+#logo {
+    width: 140px;
+    padding: 1rem 0;
+}
+
+#navbar #menu ul .nav-rippzo-item {
+    padding: 5px 0;
+}
+
+#navbar #menu ul .nav-rippzo-item .nav-rippzo-link {
+    color: var(--rippzo-light);
+    text-decoration: none;
+    font-weight: 600;
+    transition: var(--transition-color);
+}
+
+#navbar #menu ul .nav-rippzo-item .nav-rippzo-link:hover {
+    color: var(--rippzo-primary);
+}
+
+#navbar #menu ul .nav-rippzo-item .nav-rippzo-link.active {
+    color: var(--rippzo-primary);
+}
+
+#hamburger {
+    cursor: pointer;
+}
+
+#hamburger i {
+    padding: 1rem;
+}
+
+/* hero */
+#hero {
+    color: var(--rippzo-light);
+}
+
+/* portfolio */
+#portfolio .card {
+    overflow: hidden;
+    transition: var(--transition-normal);
+}
+
+#portfolio .card:hover {
+    box-shadow: 1px 1px 5px 2px #00000050;
+}
+
+#portfolio .card .overlay {
+    overflow: hidden;
+    position: relative;
+    transition: var(--transition-normal);
+}
+
+#portfolio .card:hover .overlay::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    background-color: #000b5c39;
+}
+
+#portfolio .card .overlay img {
+    width: 100%;
+    height: 100%;
+}
+
+#portfolio .card .overlay .preview-btn {
+    z-index: 5;
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#portfolio .card:hover .overlay .preview-btn {
+    display: block;
+}
+
+/* services */
+#services .service-item .card {
+    transition: var(--transition-normal);
+}
+
+#services .service-item .card:hover {
+    box-shadow: 1px 1px 5px 2px #00000050;
+}
+
+#services .service-item .card .card-title {
+    color: var(--rippzo-dark);
+}
+
+/* contact */
+main #contact {
+    min-height: 100vh;
+}
